@@ -1,0 +1,232 @@
+* {
+  width: 1280px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.header .content {
+  background-color: #000000;
+  height: 50px;
+}
+.header .content .logo img {
+  position: relative;
+  width: 116px;
+  height: 32px;
+  top: 10px;
+  left: 24px;
+}
+.header .content .Lg-Rg img {
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  top: 10px;
+  left: 1057px;
+}
+.header .content .Lg-Rg .Login {
+  position: absolute;
+  width: 91px;
+  height: 32px;
+  top: 14px;
+  left: 1105px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #F6F6F6;
+  text-decoration: none;
+}
+.header .content .Lg-Rg .Register {
+  position: absolute;
+  width: 90px;
+  height: 32px;
+  top: 15px;
+  left: 1170px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #F6F6F6;
+  text-decoration: none;
+}
+
+.menu {
+  height: 50px;
+}
+.menu .content .menu-items {
+  background-color: red;
+  position: relative;
+}
+.menu .content .menu-items .item {
+  position: absolute;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.menu .content .menu-items .item1 {
+  width: 56px;
+  height: 24px;
+  top: 16px;
+  left: 25px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.menu .content .menu-items .item2 {
+  width: 41px;
+  height: 24px;
+  top: 16px;
+  left: 111px;
+  opacity: 0.7;
+}
+.menu .content .menu-items .item3 {
+  width: 70px;
+  height: 24px;
+  top: 16px;
+  left: 182px;
+  opacity: 0.7;
+}
+.menu .content .menu-items .item4 {
+  width: 31px;
+  height: 24px;
+  top: 16px;
+  left: 282px;
+}
+.menu .content .menu-items .item5 {
+  width: 52px;
+  height: 24px;
+  top: 16px;
+  left: 343px;
+}
+.menu .content .menu-items .underline {
+  position: absolute;
+  width: 60px;
+  height: 0px;
+  top: 50px;
+  left: 24px;
+  border: 1px solid #030303;
+}
+
+.carousel {
+  height: 530px;
+  position: relative;
+}
+.carousel .content .img-4 {
+  position: absolute;
+  width: 821px;
+  height: 392px;
+  top: 5px;
+  left: 86px;
+}
+.carousel .content .img-6 {
+  position: absolute;
+  width: 1317px;
+  height: 393px;
+  top: 107px;
+  left: -22px;
+}
+.carousel .content h1 {
+  position: absolute;
+  width: 291px;
+  height: 51px;
+  top: 124px;
+  left: 930px;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.carousel .content span {
+  position: absolute;
+  width: 291px;
+  height: 51px;
+  top: 175px;
+  left: 930px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.carousel .content .btn-buy .bg-buy {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 225px;
+  left: 930px;
+  background-color: #F8B653;
+}
+.carousel .content .btn-buy .text-buy {
+  position: absolute;
+  width: 81px;
+  height: 24px;
+  top: 238px;
+  left: 964px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+}
+
+.Product {
+  width: 1280px;
+}
+.Product .content {
+  width: 90%;
+}
+.Product .content h1 {
+  width: 100%;
+  text-align: center;
+}
+.Product .content .prod {
+  background-color: #f8f9fa;
+  margin: 20px;
+  width: 335px;
+  height: 310px;
+}
+.Product .content .prod img {
+  width: 220px;
+  height: 156px;
+}
+.Product .content .prod .card-title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.Product .content .prod .card-shortDes {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  width: 335px;
+}
+.Product .content .prod .buy-price {
+  width: 335px;
+  height: 64px;
+}
+.Product .content .prod .buy-price .buy {
+  background-color: #E1B067;
+  padding: 18px 33px;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  color: #000000;
+}
+.Product .content .prod .buy-price .price {
+  background-color: #DEDDDC;
+  padding: 18px 53px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}/*# sourceMappingURL=index.css.map */

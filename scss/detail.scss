@@ -1,0 +1,222 @@
+@import "./mix";
+
+* {
+    width: 1280px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    .content {
+        background-color: #000000;
+        height: 50px;
+
+        .logo {
+            img {
+                position: relative;
+                @include renderLayout(116px, 32px, 10px, 24px);
+            }
+        }
+
+        .Lg-Rg {
+            img {
+                position: absolute;
+                @include renderLayout(60px, 30px, 10px, 1057px);
+            }
+
+            .Login {
+                position: absolute;
+                @include renderLayout(91px, 32px, 14px, 1105px);
+                @include renderTypography(300, 16px, 100%, 0%);
+                color: #F6F6F6;
+                text-decoration: none;
+            }
+
+            .Register {
+                position: absolute;
+                @include renderLayout(90px, 32px, 15px, 1170px);
+                @include renderTypography(300, 16px, 100%, 0%);
+                color: #F6F6F6;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.menu {
+    height: 50px;
+
+    .content {
+        .menu-items {
+            background-color: red;
+            position: relative;
+
+            .item {
+                position: absolute;
+                text-decoration: none;
+                color: #000000;
+                @include renderTypography(300, 20px, 100%, 0%)
+            }
+
+            .item1 {
+                @include renderLayout(56px, 24px, 16px, 25px);
+                @include renderTypography(400, 20px, 100%, 0%);
+            }
+
+            .item2 {
+                @include renderLayout(41px, 24px, 16px, 111px);
+                opacity: 0.7;
+            }
+
+            .item3 {
+                @include renderLayout(70px, 24px, 16px, 182px);
+                opacity: 0.7;
+            }
+
+            .item4 {
+                @include renderLayout(31px, 24px, 16px, 282px);
+            }
+
+            .item5 {
+                @include renderLayout(52px, 24px, 16px, 343px);
+            }
+
+            .underline {
+                position: absolute;
+                @include renderLayout(60px, 0px, 50px, 24px);
+                border: 1px solid #030303;
+            }
+        }
+    }
+}
+.Product-detail{
+    width: 1280px;
+    .content{
+        width: 70%;
+        display: flex;
+        gap: 100px;
+        align-items: center;
+        margin: 40px auto;
+        .img-detail{
+                img{
+                    width: 300px;
+                    height: 300px;
+                    background-color: #f8f9fa;    
+                }
+        }
+        .info-detail{
+            .name-detail{
+                @include renderTypography(300,30px,100%,0%);
+            }
+            .des-detail{
+                width: 503px;
+                @include renderTypography(400,16px,100%,0%)
+            }
+            .menu-size{
+                color: #1ED90E;
+                @include renderTypography(500,24px,100%,0%);
+            }
+            .size-detail{
+                margin-top: 15px;
+                display: flex;
+                gap:30px;
+                .size{
+                    background-color: #EDF9EE;
+                    @include renderTypography(600,24px,100%,0%);
+                    display: flex;
+                    width: 50px;
+                    height: 50px;
+                    align-items: center;
+                    justify-content: center;
+                    color: #1E1D1D;
+                }
+            }
+            .price-detail{
+                margin: 15px 0;
+                @include renderTypography(600,30px,100%,0%);
+                color: #FC0303;
+            }
+            .total{
+                margin: 15px 0;
+                display: flex;
+                gap:15px;
+                .cong{
+                    text-align: center;
+                    align-items: center;
+                    color: white;
+                    width: 40px;
+                    height: 40px;
+                    background-color: #6181F3;
+                    @include renderTypography(400,30px,100%,0%);
+                }
+                .number{
+                    width: 10px;
+                    margin: 0 15px;
+                    @include renderTypography(400,30px,100%,0%);
+                }
+                .tru{
+                    text-align: center;
+                    align-items: center;
+                    color: white;
+                    width: 40px;
+                    height: 40px;
+                    background-color: #6181F3;
+                    @include renderTypography(400,30px,100%,0%);
+                }
+            }
+            .btn-add{
+                    @include renderTypography(500,24px,100%,0%);
+                    width: fit-content;
+                    color: #FFF8F8;
+                    padding: 15px 30px;
+                    background: linear-gradient(to right, rgba(62, 32, 248, 0.9), #D017EE);
+            }
+        }
+    }
+}
+.Product{
+    width: 1280px;
+    .content{
+        width: 90%;
+        h1{
+            width: 100%;
+            text-align: center;
+        }
+        .prod{
+            background-color: #f8f9fa;
+            margin: 20px;
+            width: 335px;
+            height: 310px;
+            img{
+                width: 220px;
+                height: 156px;
+            }
+            .card-title{
+                @include renderTypography(300,24px,100%,0%);
+            }
+            .card-shortDes{
+                @include renderTypography(200,14px,100%,0%);
+                width: 335px;
+            }
+            .buy-price{
+                width: 335px;
+                height: 64px;
+                .buy{
+                    background-color: #E1B067;
+                    padding:18px 33px;
+                    @include renderTypography(200,24px,100%,0%);
+                    text-decoration: none;
+                    color: #000000;
+                }
+                .price{
+                    background-color: #DEDDDC;
+                    padding: 18px 53px;
+                    @include renderTypography(600,24px,100%,0%);
+                }
+            }
+        }
+    }
+}
+

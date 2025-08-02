@@ -1,0 +1,207 @@
+@import "./mix";
+
+* {
+    width: 1280px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    .content {
+        background-color: #000000;
+        height: 50px;
+
+        .logo {
+            img {
+                position: relative;
+                @include renderLayout(116px, 32px, 10px, 24px);
+            }
+        }
+
+        .Lg-Rg {
+            img {
+                position: absolute;
+                @include renderLayout(60px, 30px, 10px, 1057px);
+            }
+
+            .Login {
+                position: absolute;
+                @include renderLayout(91px, 32px, 14px, 1105px);
+                @include renderTypography(300, 16px, 100%, 0%);
+                color: #F6F6F6;
+                text-decoration: none;
+            }
+
+            .Register {
+                position: absolute;
+                @include renderLayout(90px, 32px, 15px, 1170px);
+                @include renderTypography(300, 16px, 100%, 0%);
+                color: #F6F6F6;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.menu {
+    height: 50px;
+
+    .content {
+        .menu-items {
+            background-color: red;
+            position: relative;
+
+            .item {
+                position: absolute;
+                text-decoration: none;
+                color: #000000;
+                @include renderTypography(300, 20px, 100%, 0%)
+            }
+
+            .item1 {
+                @include renderLayout(56px, 24px, 16px, 25px);
+                @include renderTypography(400, 20px, 100%, 0%);
+            }
+
+            .item2 {
+                @include renderLayout(41px, 24px, 16px, 111px);
+                opacity: 0.7;
+            }
+
+            .item3 {
+                @include renderLayout(70px, 24px, 16px, 182px);
+                opacity: 0.7;
+            }
+
+            .item4 {
+                @include renderLayout(31px, 24px, 16px, 282px);
+            }
+
+            .item5 {
+                @include renderLayout(52px, 24px, 16px, 343px);
+            }
+
+            .underline {
+                position: absolute;
+                @include renderLayout(60px, 0px, 50px, 24px);
+                border: 1px solid #030303;
+            }
+        }
+    }
+}
+
+.registerContent {
+    width: 1280px;
+    height: 538px;
+
+    .content {
+        position: relative;
+
+        .title {
+            position: absolute;
+            @include renderLayout(156px, 48px, 30px, 524px);
+        }
+
+        form {
+            .frm-email {
+                position: absolute;
+                @include renderLayout(482px, 51px, 140px, 120px);
+            }
+
+            .frm-password {
+                position: absolute;
+                @include renderLayout(482px, 51px, 218px, 120px);
+            }
+
+            .frm-passwordCFM {
+                position: absolute;
+                @include renderLayout(482px, 51px, 302px, 120px);
+            }
+
+            .frm-name {
+                position: absolute;
+                @include renderLayout(482px, 51px, 140px, 701px);
+            }
+
+            .frm-phone {
+                position: absolute;
+                @include renderLayout(482px, 51px, 218px, 696px);
+            }
+            .gender {
+                position: absolute;
+                @include renderLayout(482px, 50px, 302px, 696px);
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                .gender-title {
+                    font-weight: 400;
+                    font-size: 30px;
+                    width: fit-content;
+                    margin-right: 50px;
+                }
+                .radio-container {
+                    position: relative;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    margin-right: 50px;
+                    cursor: pointer;
+                    width: 100px;
+                    input[type="radio"] {
+                        display: none;
+                    }
+                    .custom-radio {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background-color: #ccc;
+                        position: relative;
+                        transition: background-color 0.2s;
+
+                        // Chấm giữa
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 18px;
+                            height: 18px;
+                            border-radius: 50%;
+                            background-color: transparent;
+                            transition: background-color 0.2s;
+                        }
+                    }
+                    // Khi được chọn thì đổi chấm trong
+                    input[type="radio"]:checked+.custom-radio::after {
+                        background-color: #cc00ff;
+                    }
+                    input[type="radio"]:checked+.custom-radio {
+                        background-color: #eee;
+                    }
+                }
+
+            }
+            .form-input {
+                width: 482px;
+                border :none;
+                outline: none;
+                border-bottom: 5px solid #AE18E2;
+            }
+
+            .submit-container {
+                position: absolute;
+                @include renderLayout(291px, 50px, 448px, 701px);
+                span {
+                    background-color: #AE18E2;
+                    color: white;
+                    padding: 5px 60px;
+                    @include renderLayout(104.76px, 32px, 6px, 87.3px);
+                    @include renderTypography(400, 30px, 100%, 0%);
+                }
+            }
+        }
+    }
+}

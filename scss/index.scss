@@ -1,0 +1,161 @@
+@import "./mix";
+*{
+    width: 1280px;
+    padding : 0;
+    margin :0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.header{
+    .content{
+    background-color: #000000;
+    height: 50px;
+    .logo{
+        img{
+            position: relative;
+            @include renderLayout(116px,32px,10px,24px);
+        }
+    }
+    .Lg-Rg{
+        img{
+            position: absolute;
+            @include renderLayout(60px,30px,10px,1057px);
+        }
+        .Login{
+            position: absolute;
+            @include renderLayout(91px,32px,14px,1105px);
+            @include renderTypography(300,16px,100%,0%);
+            color: #F6F6F6;
+            text-decoration: none;
+        }
+        .Register{
+            position: absolute;
+            @include renderLayout(90px,32px,15px,1170px);
+            @include renderTypography(300,16px,100%,0%);
+            color: #F6F6F6;
+            text-decoration: none;
+        }
+    }
+}
+}
+.menu{
+    height: 50px;
+    .content{
+        .menu-items{
+            background-color: red;
+            position: relative;
+            .item{
+                position: absolute;
+                text-decoration: none;
+                color: #000000;
+                @include renderTypography(300,20px,100%,0%)
+            }
+            .item1{
+                @include renderLayout(56px,24px,16px,25px);
+                @include renderTypography(400,20px,100%,0%);
+            }
+            .item2{
+                @include renderLayout(41px,24px,16px,111px);
+                opacity: 0.7;
+            }
+            .item3{
+                @include renderLayout(70px,24px,16px,182px);
+                opacity: 0.7;
+            }
+            .item4{
+                @include renderLayout(31px,24px,16px,282px);
+            }
+            .item5{
+                @include renderLayout(52px,24px,16px,343px);
+            }
+            .underline{
+                position: absolute;
+                @include renderLayout(60px,0px,50px,24px);
+                border: 1px solid #030303;
+            }
+        }
+    }
+}
+.carousel{
+    height: 530px;
+    position: relative;
+    .content{
+        .img-4{
+            position: absolute;
+            @include renderLayout(821px,392px,5px,86px);
+        }
+        .img-6{
+            position: absolute;
+            @include renderLayout(1317px,393px,107px,-22px);
+        }
+        h1{
+            position: absolute;
+            @include renderLayout(291px,51px,124px,930px);
+            @include renderTypography(300,40px,100%,0%);
+            color: #000000;
+        }
+        span{
+            position: absolute;
+            @include renderLayout(291px,51px,175px,930px);
+            @include renderTypography(300,20px,100%,0%);
+            color: #000000;
+        }
+        .btn-buy{
+            .bg-buy{
+                position: absolute;
+                @include renderLayout(150px,50px,225px,930px);
+                background-color: #F8B653;
+            }
+            .text-buy{
+                position: absolute;
+                @include renderLayout(81px,24px,238px,964px);
+                @include renderTypography(300,20px,100%,0%);
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+.Product{
+    width: 1280px;
+    .content{
+        width: 90%;
+        h1{
+            width: 100%;
+            text-align: center;
+        }
+        .prod{
+            background-color: #f8f9fa;
+            margin: 20px;
+            width: 335px;
+            height: 310px;
+            img{
+                width: 220px;
+                height: 156px;
+            }
+            .card-title{
+                @include renderTypography(300,24px,100%,0%);
+            }
+            .card-shortDes{
+                @include renderTypography(200,14px,100%,0%);
+                width: 335px;
+            }
+            .buy-price{
+                width: 335px;
+                height: 64px;
+                .buy{
+                    background-color: #E1B067;
+                    padding:18px 33px;
+                    @include renderTypography(200,24px,100%,0%);
+                    text-decoration: none;
+                    color: #000000;
+                }
+                .price{
+                    background-color: #DEDDDC;
+                    padding: 18px 53px;
+                    @include renderTypography(600,24px,100%,0%);
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,12 @@
+@mixin renderLayout($w,$h,$t,$l){
+    width: $w;
+    height: $h;
+    top :$t;
+    left :$l;
+}
+@mixin renderTypography($fw,$fs,$lh,$ls){
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
